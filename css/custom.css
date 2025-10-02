@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  /* variables for colors, fonts, and sizes go here */
+}
+html,
+body {
+  font-family: Helvetica, sans-serif; /* replace Helvetica with the Google Font */
+  background-color: hsl(220, 50%, 95%);
+  color: hsl(220, 70%, 20%);
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 60rem; /* if we want to contain everything with the same width */
+  background-color: hsl(220, 50%, 90%);
+}
+
+header {
+  /* consistent padding/margin */
+}
+
+main {
+  /* consistent padding/margin */
+  & .message {
+  }
+  & .cards {
+  }
+}
+
+footer {
+  /* consistent padding/margin */
+  & p {
+    margin: 0;
+  }
+}
+
+.card {
+  border: 1px solid hsl(220, 570%, 20%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/***************************
+  Media Queries
+***************************/
+@media screen {
+}
